@@ -214,8 +214,7 @@ CRToastAnimationStepBlock CRToastOutwardAnimationsSetupBlock(CRToastManager *wea
 #pragma mark -
 
 - (NSArray *)notificationIdentifiersInQueue {
-    if (_notifications.count == 0) { return @[]; }
-    return [[_notifications valueForKeyPath:@"options.kCRToastIdentifierKey"] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF != nil"]];
+    return _notifications;
 }
 
 - (void)dismissNotification:(BOOL)animated {
