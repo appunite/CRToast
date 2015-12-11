@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'CRToast'
+  s.name     = 'CRToast-appunite'
   s.version  = '0.0.9'
   s.license  = 'MIT'
   s.summary  = 'A modern iOS toast view that can fit your notification needs'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
 
   s.source_files = "CRToast/*.{h,m}"
-  s.public_header_files = "CRToast/CRToast.h", "CRToast/CRToastConfig.h", "CRToast/CRToastManager.h"
+  s.public_header_files = "CRToast/CRToast.h", "CRToast/CRToastConfig.h", "CRToast/CRToastManager.h", "CRToast/CRToastView.h"
 end
